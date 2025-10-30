@@ -1,7 +1,6 @@
 #colLogo {
   position: relative;
   background-color: var(--background-color);
-  height: 100vh;
   box-shadow: 15px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -10,6 +9,8 @@
   top: 0;
   right: 0;
   transform: translateX(-15%);
+  max-width: 100%;
+  height: auto;
 }
 
 #colLogo .line-background {
@@ -23,12 +24,10 @@
   transform: translateX(50%);
 }
 
-/* Form Styles */
 #colForm {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: var(--secondary-color);
 }
 
@@ -39,17 +38,21 @@
   width: 100%;
   max-width: 450px;
   padding: 20px;
-  /* border: 2px solid var(--primary-color); */
 }
 
 #colForm .full-logo {
   width: 100%;
+  max-width: 400px;
   margin-bottom: 3.6em;
 }
 
 #colForm h4 {
   margin-bottom: 2em;
   font-size: 1.6em;
+}
+
+#colForm form {
+  width: 100%;
 }
 
 #colForm form .form-group {
@@ -65,15 +68,16 @@
 }
 
 #colForm form .form-group input {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   width: 100%;
   padding: 12px;
   border-radius: 15px;
   font-size: 1.1em;
+  border: 0;
 }
 
 #colForm form .btn-login {
-  background: linear-gradient(to right,#0135A8, #3C7AFF);
+  background: linear-gradient(to right, #0135a8, #3c7aff);
   color: var(--secondary-color);
   width: 100%;
   padding: 12px;
@@ -86,7 +90,7 @@
 }
 
 #colForm form .btn-login:hover {
-  background: linear-gradient(to right,#012E8C, #2A5ED8);
+  background: linear-gradient(to right, #012e8c, #2a5ed8);
 }
 
 #colForm form .form-link {
@@ -97,4 +101,25 @@
 
 #colForm form .form-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 991.98px) {
+  #colForm {
+    height: auto;
+    min-height: 100vh;
+    padding: 3rem 0;
+  }
+
+  #colForm .form-container {
+    max-width: 90%;
+  }
+
+  #colForm .full-logo {
+    margin-bottom: 2em;
+  }
+
+  #colForm h4 {
+    margin-bottom: 1.5em;
+    font-size: 1.4em;
+  }
 }
