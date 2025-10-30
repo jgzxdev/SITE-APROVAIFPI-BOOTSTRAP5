@@ -1,0 +1,100 @@
+#colLogo {
+  position: relative;
+  background-color: var(--background-color);
+  height: 100vh;
+  box-shadow: 15px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+#colLogo .img-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-15%);
+}
+
+#colLogo .line-background {
+  position: absolute;
+  height: 100%;
+}
+
+#colLogo #lineBackground1 {
+  top: 0;
+  right: 0;
+  transform: translateX(50%);
+}
+
+/* Form Styles */
+#colForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--secondary-color);
+}
+
+#colForm .form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+  /* border: 2px solid var(--primary-color); */
+}
+
+#colForm .full-logo {
+  width: 100%;
+  margin-bottom: 3.6em;
+}
+
+#colForm h4 {
+  margin-bottom: 2em;
+  font-size: 1.6em;
+}
+
+#colForm form .form-group {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+#colForm form .form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+#colForm form .form-group input {
+  background-color: #F3F3F3;
+  width: 100%;
+  padding: 12px;
+  border-radius: 15px;
+  font-size: 1.1em;
+}
+
+#colForm form .btn-login {
+  background: linear-gradient(to right,#0135A8, #3C7AFF);
+  color: var(--secondary-color);
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.2em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#colForm form .btn-login:hover {
+  background: linear-gradient(to right,#012E8C, #2A5ED8);
+}
+
+#colForm form .form-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+#colForm form .form-link:hover {
+  text-decoration: underline;
+}
