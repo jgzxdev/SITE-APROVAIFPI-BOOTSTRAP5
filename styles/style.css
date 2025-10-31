@@ -15,12 +15,22 @@ body {
 body {
   margin: 0;
   box-sizing: border-box;
-  overflow: hidden;
   font-family: var(--font-family);
+  overflow: hidden;
 }
 
 main {
   display: flex;
   min-height: 100vh;
   width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  body {
+    overflow: auto;
+  }
+
+  main {
+    flex-direction: column;
+  }
 }

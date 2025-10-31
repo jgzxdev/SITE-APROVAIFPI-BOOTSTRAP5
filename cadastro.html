@@ -28,7 +28,7 @@
             <img
               src="./img/logo_aprovaifpi 1.svg"
               alt="AprovaIFPI Logo"
-              class="img-fluid"
+              class="img-fluid img-logo"
             />
             <img
               src="./img/logo_background.svg"
@@ -47,7 +47,7 @@
             class="col-12 col-lg-6 d-flex justify-content-center align-items-center"
             id="colForm"
           >
-            <div class="form-container">
+            <div class="form-container" style="max-width: 600px;">
               <img
                 src="./img/full_logo.png"
                 alt="logo completa"
@@ -60,33 +60,40 @@
               </div>
 
               <form>
-                <div class="form-group">
-                  <label for="reg-name" class="form-label"
-                    >Nome de usuário</label
-                  >
-                  <input type="text" id="reg-name" class="form-control" />
-                </div>
-                <div class="form-group">
-                  <label for="reg-email" class="form-label">Email</label>
-                  <input type="email" id="reg-email" class="form-control" />
-                </div>
-                <div class="form-group">
-                  <label for="reg-password" class="form-label">Senha</label>
-                  <input
-                    type="password"
-                    id="reg-password"
-                    class="form-control"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="reg-confirm-password" class="form-label"
-                    >Confirmar Senha</label
-                  >
-                  <input
-                    type="password"
-                    id="reg-confirm-password"
-                    class="form-control"
-                  />
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="reg-name" class="form-label"
+                        >Nome de usuário</label
+                      >
+                      <input type="text" id="reg-name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                      <label for="reg-email" class="form-label">Email</label>
+                      <input type="email" id="reg-email" class="form-control" />
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6">
+                    <div class="form-group">
+                      <label for="reg-password" class="form-label">Senha</label>
+                      <input
+                        type="password"
+                        id="reg-password"
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="reg-confirm-password" class="form-label"
+                        >Confirmar Senha</label
+                      >
+                      <input
+                        type="password"
+                        id="reg-confirm-password"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 <button type="submit" class="btn-login">Cadastrar</button>

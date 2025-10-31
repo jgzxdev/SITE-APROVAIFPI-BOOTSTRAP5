@@ -4,6 +4,10 @@
   box-shadow: 15px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
+#colLogo .img-logo {
+  max-width: 300px;
+}
+
 #colLogo .img-background {
   position: absolute;
   top: 0;
@@ -43,11 +47,11 @@
 #colForm .full-logo {
   width: 100%;
   max-width: 400px;
-  margin-bottom: 3.6em;
+  margin-bottom: 0.5;
 }
 
 #colForm h4 {
-  margin-bottom: 2em;
+  margin-bottom: 0.9em;
   font-size: 1.6em;
 }
 
@@ -107,7 +111,7 @@
   #colForm {
     height: auto;
     min-height: 100vh;
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 
   #colForm .form-container {
@@ -115,11 +119,35 @@
   }
 
   #colForm .full-logo {
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
   }
 
   #colForm h4 {
     margin-bottom: 1.5em;
-    font-size: 1.4em;
+  }
+
+  #colForm form .form-group {
+    margin-bottom: 1em;
+  }
+
+  #colForm form .form-group input {
+    padding: 10px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #colLogo .img-logo {
+    max-width: 200px;
+  }
+
+  #colLogo .img-background {
+    transform: translateX(-5%);
+  }
+}
+
+@media (max-width: 400px) {
+  #colLogo .img-logo {
+    max-width: 150px;
   }
 }
